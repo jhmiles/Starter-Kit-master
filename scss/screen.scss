@@ -1,0 +1,323 @@
+@import "reset";
+
+$break-small: 700px;
+$break-large: 1000px;
+
+$lightbrown: #634c2e;
+$darkbrown: #333333;
+$red: #ca4936;
+$darkgrey: #121f1f;
+$lightgrey: #999999;
+
+/* GENERAL */
+/*     section {
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        min-height: 100%;
+        position: relative;
+    } */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 21px;
+    background: lightgrey;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: .8em;
+}
+
+section {
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        min-height: 100%;
+        position: relative;
+}
+
+a {
+    color: $lightgrey;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 1.1em;
+}
+
+/* SPECIFIC */
+
+.nav {
+    background-image: url(/images/darkdenim3_@2X.png);
+    background-size: auto;
+    position: relative;
+    height: 800px;
+    background-position: 0 0;
+    background-repeat: repeat repeat;
+        h2 {
+            margin: 5px auto 5px;
+            padding: 20px;
+                img {
+                    margin: 50px 15% 0px 15%;
+                    width: 70%;
+                }
+        }
+                        h1 {
+                            font-size: 16px;
+                            color: $lightgrey;
+                            text-align: center;
+                            margin: 15px auto 15px;
+                            padding: 20px;
+                            border: 1px solid $lightbrown;
+                            border-radius: 5px;
+                            width: 50%;
+                            background-image: url(/images/eight_horns.png);
+                            background-size: auto;
+                            background-repeat: repeat repeat;
+                        }
+}
+
+.wrap {
+    margin: 0 auto;
+    background: white;
+}
+
+.content {
+    padding: 0;
+    font-size: 0;
+
+    /* %column {
+        display: inline-block;
+        vertical-align: top;
+    } */
+
+    .main {
+        background-image: url(/images/eight_horns.png);
+        background-size: auto;
+        background-repeat: repeat repeat;
+        font-size: 1rem;
+        height: 800px;
+        background-position: center;
+            h1 {
+                padding-top: 100px;
+                color: $darkgrey;
+            }
+
+            .portraits {
+                width: 90%;
+                margin: 30px auto;
+                /* margin-left: 5%;
+                margin-top: 30px; */
+                    @media screen and (min-width: $break-small) {
+                        width: 630px;
+                    }
+                img {
+                    width: 49%;
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    margin: 0 auto;
+                        @media screen and (min-width: $break-small) {
+                            width: 310px;
+                        }
+                    }
+                h2 {
+                    font-size: .7em;
+                    padding-left: 10%;
+                }
+            }
+    }
+
+    .son {
+        background-image: url(/images/darkdenim3_@2X.png);
+        background-size: auto;
+        background-repeat: repeat repeat;
+        font-size: 1rem;
+        height: 800px;
+        background-position: 0 0;
+        color: $lightgrey;
+            h1 {
+                padding-top: 100px;
+                color: $lightgrey;
+            }
+            img {
+                display: block;
+                width: 50%;
+                border-radius: 500px;
+                margin-top: 50px;
+                margin-left: 25%;
+                @media screen and (min-width: $break-small) {
+                        width: 350px;
+                        margin: 50px auto 0px;
+                    }
+            }
+    }
+
+    .comeback {
+        background-image: url(/images/eight_horns.png);
+        background-size: auto;
+        background-repeat: repeat repeat;
+        font-size: 1rem;
+        height: 800px;
+        background-position: center;
+            h1 {
+                padding-top: 100px;
+                color: $darkgrey;
+            }
+            img {
+                display: block;
+                width: 50%;
+                border-radius: 200px;
+                margin-top: 50px;
+                margin-left: 25%;
+                    @media screen and (min-width: $break-small) {
+                        width: 350px;
+                        margin: 50px auto 0px;
+                    }
+            }
+    }
+
+    .rewards {
+    background-image: url(/images/darkdenim3_@2X.png);
+    background-size: auto;
+    position: relative;
+    height: 800px;
+    background-position: 0 0;
+    background-repeat: repeat repeat;
+    font-size: 1rem;
+    color: $lightgrey;
+            h1 {
+                padding-top: 100px;
+            }
+            .buttons {
+                width: 85%;
+                margin: 50px auto 0px;
+                @media screen and (min-width: $break-small) {
+                        width: 630px;
+                }
+                img {
+                    width: 49%;
+                    border-radius: 200px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    @media screen and (min-width: $break-small) {
+                            width: 292px;
+                    }
+                }
+            }
+            p {
+                padding-bottom: 20px;
+                padding-top: 40px;
+            }
+            .kickstarter {
+                    border: 1px solid $lightgrey;
+                    border-radius: 5px;
+                    width: 70%;
+                    margin: 0 auto;
+                    padding-top: 0px;
+                    height: 4em;
+                    background-image: url(/images/eight_horns.png);
+                    background-size: auto;
+                    background-repeat: repeat repeat;
+                    p {
+                        padding-top: 8px;
+                        color: black;
+                        width: 60%;
+                        font-weight: bold;
+                        @media screen and (min-width: $break-small) {
+                            width: 35%;
+                        }
+                        @media screen and (min-width: $break-large) {
+                            width: 25%;
+                        }
+                    }
+            }
+    }
+    h1 {
+        text-align: center;
+        padding-top: 30px;
+    }
+    p {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 60px;
+        line-height: 1.5em;
+    }
+}
+
+footer {
+    background-color: black;
+    position: relative;
+    height: 100px;
+    background-position: 0 0;
+    background-repeat: repeat repeat;
+        h1 {
+            color: $lightbrown;
+        }
+}
+
+
+/* @media screen and (min-width: 480px) {
+} */
+
+@media screen and (min-width: 700px) {
+.nav {
+    h1 {
+        display: inline-block;
+        width: 20%;
+        margin: 5% 2% 0 2%;
+        vertical-align: top;
+        height: 10%;
+    }
+}
+
+.content {
+    .main {
+        h1 {
+        }
+        .potraits {
+            img {
+                width: 310px;
+            }
+        }
+    }
+
+    .son {
+
+    }
+
+    .comeback {
+
+    }
+
+    .rewards {
+
+    }
+}
+}
+
+@media screen and (min-width: 1000px) {
+.nav {
+    h2 {
+        margin: 0 auto;
+        img {
+            width: 672px;
+            margin: 50px 20% 0px 20%;
+        }
+    }
+    h1 {
+        margin-top: 1%;
+    }
+
+}
+}
+
